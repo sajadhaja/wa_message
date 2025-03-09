@@ -33,8 +33,8 @@ def bot_send_message():
         try:
             send_button = driver.find_element(By.CSS_SELECTOR, 'button[aria-label="Send"]')
             send_button.click()
-            time.sleep(15)
             print(f"Successfully send message to number {number}")
+            time.sleep(15)
         except Exception as ex:
             print(f"Failed to send message to {number}. Reason : {ex}")
 
